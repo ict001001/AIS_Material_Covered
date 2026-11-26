@@ -1,0 +1,945 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Al-Rowad International Schools — Quarter 2 Quiz 1: Material Covered (Grades 1–12)</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@500;600&family=Cairo:wght@600;700&display=swap" rel="stylesheet">
+<script type="text/javascript" src="https://gc.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=5uoSTChjPzB4AFp__Sq1BLQ84KnWkEpGiLQIWPF3PU-gXb2fpSILAGjUwXz_Zcho2wJL-ypslrojMLUyNNvjnrib86gdbedcJkkQbe6lSY-QNQFZfQijbYcsAhQJEOO9fbqwx08e9lrYzoWNkh1NVB77M74YcjFAsXbabL7CdP_yadEGEn70DU1LewqOPtVdkGYVbbvYnayIayQuZsQY36hy3gSkZ-MraQP80VSMj16X6rxOl_2BGnbVzfum1d8dDo7H5ku3w10IMNuF-hRPqYhamrEIJaLqfstI02l4fZheRO6xmpbMd_Cxpa3_GlpZ_kry7IrHUEpsiWt_VgFniZwiAVZNFItzH-_rp5g-SDBy-AULQa5Bdyr8O0lsT7G-LcGtSSzzSXI_z5r5bP3AAQ" charset="UTF-8"></script><style>
+  :root {
+    --bg: #F3F6FA;
+    --panel: #FFFFFF;
+    --navy: #162B56;
+    --navy-dark: #0E1D3D;
+    --azure: #2E64B8;
+    --sky: #E8F1FC;
+    --gold: #D99B26;
+    --gold-bg: #FEF8EB;
+    --teal: #147D64;
+    --teal-bg: #E6F6F2;
+    --coral: #C9563C;
+    --coral-bg: #FDEEEB;
+    --indigo: #5B4BC4;
+    --indigo-bg: #EFEBFD;
+    --ink: #13203B;
+    --slate: #526380;
+    --line: #DCE4F0;
+  }
+
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: 'Outfit', sans-serif;
+    line-height: 1.5;
+  }
+  .mono { font-family: 'IBM Plex Mono', monospace; }
+  .ar { font-family: 'Cairo', sans-serif; direction: rtl; text-align: right; }
+
+  /* Top Brand Header */
+  .topbar {
+    background: #FFFFFF;
+    border-bottom: 1px solid var(--line);
+    padding: 16px 5vw;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    position: sticky;
+    top: 0;
+    z-index: 50;
+    box-shadow: 0 2px 12px rgba(14, 29, 61, 0.05);
+  }
+  .brand-left {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+  }
+  .brand-left img {
+    height: 54px;
+    width: auto;
+    display: block;
+  }
+  .brand-divider {
+    width: 1px;
+    height: 36px;
+    background: var(--line);
+  }
+  .brand-title {
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--navy);
+    line-height: 1.25;
+  }
+  .brand-sub {
+    font-size: 12.5px;
+    color: var(--slate);
+  }
+  .exam-badge {
+    background: var(--gold-bg);
+    border: 1.5px solid var(--gold);
+    color: #8A5D08;
+    padding: 8px 16px;
+    border-radius: 10px;
+    font-size: 13px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  /* Interactive 4-Step Journey Stepper */
+  .journey-banner {
+    background: linear-gradient(125deg, var(--navy-dark) 0%, var(--navy) 60%, var(--azure) 100%);
+    color: #fff;
+    padding: 36px 5vw 40px;
+  }
+  .journey-intro {
+    max-width: 72ch;
+    margin-bottom: 26px;
+  }
+  .journey-intro h1 {
+    margin: 0 0 8px;
+    font-size: clamp(24px, 3.6vw, 38px);
+    font-weight: 800;
+    letter-spacing: -0.01em;
+  }
+  .journey-intro p {
+    margin: 0;
+    color: #D6E4FA;
+    font-size: 15.5px;
+  }
+
+  .stepper-track {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 14px;
+    position: relative;
+  }
+  .step-node {
+    background: rgba(255, 255, 255, 0.08);
+    border: 1.5px solid rgba(255, 255, 255, 0.16);
+    border-radius: 14px;
+    padding: 16px 18px;
+    cursor: pointer;
+    transition: all .2s ease;
+    position: relative;
+    text-align: left;
+    color: #fff;
+    font-family: inherit;
+  }
+  .step-node:hover {
+    background: rgba(255, 255, 255, 0.15);
+    transform: translateY(-2px);
+  }
+  .step-node.active {
+    background: #FFFFFF;
+    color: var(--ink);
+    border-color: var(--gold);
+    box-shadow: 0 10px 24px rgba(0, 0, 0, 0.22);
+  }
+  .step-num {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 11px;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 3px 9px;
+    border-radius: 999px;
+    background: rgba(255,255,255,0.16);
+    color: #FFE3A3;
+    margin-bottom: 8px;
+  }
+  .step-node.active .step-num {
+    background: var(--navy);
+    color: #fff;
+  }
+  .step-title {
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 4px;
+  }
+  .step-date {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 12px;
+    color: #B8CEF2;
+  }
+  .step-node.active .step-date {
+    color: var(--azure);
+    font-weight: 600;
+  }
+  .step-detail-drawer {
+    margin-top: 14px;
+    background: rgba(255, 255, 255, 0.12);
+    border: 1px solid rgba(255, 255, 255, 0.22);
+    border-radius: 12px;
+    padding: 14px 20px;
+    font-size: 14.5px;
+    color: #F2F7FF;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+  }
+
+  /* Main Interactive Workspace: Left Grade Navigator + Right Subject Roadmap */
+  .workspace {
+    display: grid;
+    grid-template-columns: 330px 1fr;
+    gap: 24px;
+    padding: 28px 5vw 64px;
+    align-items: start;
+  }
+
+  /* Left Sidebar: Grade & Track Selector */
+  .sidebar {
+    background: var(--panel);
+    border: 1px solid var(--line);
+    border-radius: 16px;
+    padding: 20px;
+    position: sticky;
+    top: 96px;
+    box-shadow: 0 4px 16px rgba(22, 43, 86, 0.04);
+  }
+  .sidebar h2 {
+    margin: 0 0 4px;
+    font-size: 17px;
+    color: var(--navy);
+  }
+  .sidebar > p {
+    margin: 0 0 16px;
+    font-size: 13px;
+    color: var(--slate);
+  }
+  .stage-group {
+    margin-bottom: 16px;
+  }
+  .stage-heading {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 11px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: .07em;
+    color: var(--slate);
+    margin-bottom: 8px;
+    padding-left: 4px;
+  }
+  .grade-pill-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 8px;
+  }
+  .grade-pill-grid.single-col {
+    grid-template-columns: 1fr;
+  }
+  .g-btn {
+    border: 1.5px solid var(--line);
+    background: var(--bg);
+    color: var(--ink);
+    border-radius: 10px;
+    padding: 10px 12px;
+    cursor: pointer;
+    text-align: left;
+    font-family: inherit;
+    transition: all .15s ease;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+  }
+  .g-btn:hover {
+    border-color: var(--azure);
+    background: var(--sky);
+  }
+  .g-btn.active {
+    background: var(--navy);
+    border-color: var(--navy);
+    color: #fff;
+    box-shadow: 0 4px 12px rgba(22, 43, 86, 0.2);
+  }
+  .g-btn .g-main {
+    font-size: 14px;
+    font-weight: 700;
+  }
+  .g-btn .g-sub {
+    font-size: 11.5px;
+    color: var(--slate);
+  }
+  .g-btn.active .g-sub {
+    color: #BFD4F7;
+  }
+
+  /* Right Main Panel: Selected Grade Study Roadmap */
+  .main-stage {
+    background: var(--panel);
+    border: 1px solid var(--line);
+    border-radius: 18px;
+    padding: 26px 28px;
+    box-shadow: 0 4px 20px rgba(22, 43, 86, 0.04);
+  }
+  .grade-banner {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 16px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid var(--line);
+    margin-bottom: 20px;
+  }
+  .track-tag {
+    display: inline-block;
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 11.5px;
+    font-weight: 600;
+    padding: 4px 11px;
+    border-radius: 999px;
+    margin-bottom: 8px;
+  }
+  .tag-elem { background: var(--teal-bg); color: var(--teal); }
+  .tag-mid { background: var(--sky); color: var(--azure); }
+  .tag-us { background: var(--coral-bg); color: var(--coral); }
+  .tag-uk { background: var(--indigo-bg); color: var(--indigo); }
+  .weight-pill {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    background: var(--gold-bg);
+    border: 1px solid var(--gold);
+    color: #8A5D08;
+    font-size: 12.5px;
+    font-weight: 700;
+    padding: 4px 12px;
+    border-radius: 999px;
+    margin-left: 8px;
+    vertical-align: middle;
+  }
+
+  .grade-banner h2 {
+    margin: 0 0 4px;
+    font-size: 28px;
+    font-weight: 800;
+    color: var(--navy);
+  }
+  .grade-banner .sub-info {
+    font-size: 14px;
+    color: var(--slate);
+  }
+
+  /* Interactive Study Progress Tracker */
+  .progress-box {
+    background: var(--bg);
+    border: 1px solid var(--line);
+    border-radius: 12px;
+    padding: 14px 18px;
+    min-width: 260px;
+  }
+  .progress-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 13px;
+    font-weight: 700;
+    margin-bottom: 8px;
+  }
+  .progress-bar-bg {
+    height: 9px;
+    background: #DCE4F0;
+    border-radius: 999px;
+    overflow: hidden;
+  }
+  .progress-bar-fill {
+    height: 100%;
+    width: 0%;
+    background: linear-gradient(90deg, var(--teal), var(--azure));
+    border-radius: 999px;
+    transition: width .25s ease;
+  }
+  .progress-actions {
+    margin-top: 8px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+    color: var(--slate);
+  }
+  .link-btn {
+    background: none;
+    border: none;
+    color: var(--azure);
+    font-weight: 600;
+    cursor: pointer;
+    padding: 0;
+    font-family: inherit;
+    font-size: 12px;
+    text-decoration: underline;
+  }
+
+  .schedule-notice {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background: var(--sky);
+    border: 1.5px solid #B6D0F5;
+    color: var(--navy);
+    border-radius: 12px;
+    padding: 11px 16px;
+    font-size: 13.5px;
+    margin-bottom: 18px;
+  }
+
+  /* Filter & Search Bar inside Main Stage */
+  .toolbar {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  .cat-tabs {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+  }
+  .cat-tab {
+    border: 1px solid var(--line);
+    background: var(--bg);
+    color: var(--ink);
+    font-family: inherit;
+    font-size: 13px;
+    font-weight: 600;
+    padding: 6px 13px;
+    border-radius: 999px;
+    cursor: pointer;
+    transition: all .15s ease;
+  }
+  .cat-tab:hover { border-color: var(--azure); }
+  .cat-tab.active {
+    background: var(--azure);
+    color: #fff;
+    border-color: var(--azure);
+  }
+  .right-tools {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+  }
+  .search-field {
+    padding: 8px 14px;
+    border: 1.5px solid var(--line);
+    border-radius: 999px;
+    font-family: inherit;
+    font-size: 13.5px;
+    width: 230px;
+    outline: none;
+  }
+  .search-field:focus { border-color: var(--azure); }
+  .print-btn {
+    background: var(--navy);
+    color: #fff;
+    border: none;
+    border-radius: 999px;
+    padding: 8px 15px;
+    font-family: inherit;
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+  }
+  .print-btn:hover { background: var(--azure); }
+
+  /* Vertical Subject Roadmap Timeline */
+  .subject-roadmap {
+    position: relative;
+    padding-left: 28px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+  .subject-roadmap::before {
+    content: "";
+    position: absolute;
+    left: 9px;
+    top: 12px;
+    bottom: 12px;
+    width: 3px;
+    background: linear-gradient(180deg, var(--teal), var(--azure), var(--gold));
+    border-radius: 999px;
+  }
+  .subj-stop {
+    position: relative;
+    background: #FFFFFF;
+    border: 1.5px solid var(--line);
+    border-radius: 14px;
+    padding: 18px 20px;
+    transition: border-color .15s ease, box-shadow .15s ease;
+  }
+  .subj-stop:hover {
+    border-color: #B6C8E6;
+    box-shadow: 0 4px 14px rgba(22, 43, 86, 0.05);
+  }
+  .subj-stop.completed {
+    background: #F7FCF9;
+    border-color: #B4E2D3;
+  }
+  .stop-marker {
+    position: absolute;
+    left: -26px;
+    top: 22px;
+    width: 17px;
+    height: 17px;
+    border-radius: 50%;
+    background: #FFFFFF;
+    border: 4px solid var(--azure);
+    box-shadow: 0 0 0 3px #FFFFFF;
+  }
+  .subj-stop.cat-STEM .stop-marker { border-color: var(--teal); }
+  .subj-stop.cat-Languages .stop-marker { border-color: var(--coral); }
+  .subj-stop.cat-Humanities .stop-marker { border-color: var(--indigo); }
+  .subj-stop.cat-Islamic .stop-marker { border-color: var(--gold); }
+  .subj-stop.cat-Arabic .stop-marker { border-color: var(--navy); }
+  .subj-stop.completed .stop-marker {
+    background: var(--teal);
+    border-color: var(--teal);
+  }
+
+  .stop-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 10px;
+  }
+  .stop-title-wrap {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+  .stop-title {
+    font-size: 17.5px;
+    font-weight: 700;
+    color: var(--navy);
+  }
+  .stop-cat {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 11px;
+    font-weight: 600;
+    padding: 2px 9px;
+    border-radius: 6px;
+    background: var(--bg);
+    color: var(--slate);
+  }
+
+  /* Interactive Topic Checkboxes */
+  .topic-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+  .topic-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    padding: 8px 12px;
+    border-radius: 8px;
+    background: var(--bg);
+    cursor: pointer;
+    font-size: 14.5px;
+    transition: background .15s ease;
+  }
+  .topic-item:hover { background: var(--sky); }
+  .topic-item input[type="checkbox"] {
+    margin-top: 3px;
+    width: 17px;
+    height: 17px;
+    accent-color: var(--teal);
+    cursor: pointer;
+    flex-shrink: 0;
+  }
+  .topic-item.checked span {
+    text-decoration: line-through;
+    color: var(--slate);
+  }
+  .subj-stop.ar .topic-item {
+    direction: rtl;
+    text-align: right;
+  }
+
+  footer {
+    background: var(--navy-dark);
+    color: #C5D4ED;
+    padding: 28px 5vw;
+    font-size: 13.5px;
+    border-top: 4px solid var(--gold);
+  }
+  footer strong { color: #fff; }
+
+  @media (max-width: 920px) {
+    .workspace { grid-template-columns: 1fr; }
+    .sidebar { position: static; }
+    .stepper-track { grid-template-columns: 1fr 1fr; }
+  }
+  @media (max-width: 560px) {
+    .stepper-track { grid-template-columns: 1fr; }
+    .search-field { width: 100%; }
+  }
+  @media print {
+    .topbar, .journey-banner, .sidebar, .toolbar { display: none !important; }
+    .workspace { display: block; padding: 0; }
+    .main-stage { border: none; box-shadow: none; padding: 0; }
+  }
+</style>
+</head>
+<body>
+
+<header class="topbar">
+  <div class="brand-left">
+    <img src="data:image/png;base64,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" alt="Al-Rowad International Schools Logo">
+    <div class="brand-divider"></div>
+    <div>
+      <div class="brand-title">Al-Rowad International Schools</div>
+      <div class="brand-sub">Semester 1 · Quarter 2 Quiz 1 — Material Covered (Grades 1–12)</div>
+    </div>
+  </div>
+  <div class="exam-badge">
+    <span>📅</span>
+    <span>Q2 Quiz 1: Weeks 16–17 (Dec 6–17) · Finals: Weeks 19–20 (Dec 27 – Jan 7)</span>
+  </div>
+</header>
+
+<section class="journey-banner">
+  <div class="journey-intro">
+    <h1>Material Covered — Quarter 2 Quiz 1 (Grades 1–12)</h1>
+    <p>Dear Parents, as shared with you at the beginning of the year in the <strong>Assessment Calendar</strong>, we are having <strong>Quiz 1 in Quarter 2 during Weeks 16 and 17 (Sunday, December 6 – Thursday, December 17, 2026)</strong>—the detailed daily quiz schedule will be distributed by School Administration in <strong>Week 15 (Monday, November 30, 2026)</strong>. Please also note that the upcoming <strong>Semester 1 Final Exams</strong> will take place during <strong>Weeks 19 and 20 (starting Sunday, December 27, 2026, and finishing Thursday, January 7, 2027)</strong>. Select your child's grade and track below to review all covered topics and textbook pages.</p>
+  </div>
+
+  <div class="stepper-track" id="stepperTrack"></div>
+  <div class="step-detail-drawer" id="stepDrawer"></div>
+</section>
+
+<main class="workspace">
+  <aside class="sidebar">
+    <h2>1. Choose Grade & Track</h2>
+    <p>Select a grade below to load its subject roadmap.</p>
+
+    <div class="stage-group">
+      <div class="stage-heading">Elementary School</div>
+      <div class="grade-pill-grid" id="nav-elem"></div>
+    </div>
+
+    <div class="stage-group">
+      <div class="stage-heading">Middle School</div>
+      <div class="grade-pill-grid" id="nav-mid"></div>
+    </div>
+
+    <div class="stage-group">
+      <div class="stage-heading">High School · US Track</div>
+      <div class="grade-pill-grid" id="nav-us"></div>
+    </div>
+
+    <div class="stage-group" style="margin-bottom:0;">
+      <div class="stage-heading">High School · UK Track</div>
+      <div class="grade-pill-grid" id="nav-uk"></div>
+    </div>
+  </aside>
+
+  <section class="main-stage" id="mainStage">
+    <div class="grade-banner">
+      <div>
+        <span class="track-tag" id="activeTrackTag">Elementary</span><span class="weight-pill" id="activeWeightBadge">⚖️ Quiz 1 Weight: 10 Marks</span>
+        <h2 id="activeGradeTitle">Grade 4</h2>
+        <div class="sub-info" id="activeSubInfo">All Students · Quarter 2 Quiz Material Covered (Weeks 11–13)</div>
+      </div>
+
+      <div class="progress-box">
+        <div class="progress-top">
+          <span>Home Study Checklist</span>
+          <span class="mono" id="progressText">0 / 0 Reviewed</span>
+        </div>
+        <div class="progress-bar-bg">
+          <div class="progress-bar-fill" id="progressFill"></div>
+        </div>
+        <div class="progress-actions">
+          <span>Tick topics below as you review</span>
+          <button type="button" class="link-btn" id="resetProgressBtn">Reset</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="schedule-notice">
+      <span>🗓️</span>
+      <span><strong>Quiz Schedule Note:</strong> The detailed daily quiz schedule will be sent by the School Administration in <strong>Week 15 (Monday, November 30, 2026)</strong>.</span>
+    </div>
+
+    <div class="toolbar">
+      <div class="cat-tabs" id="catTabs"></div>
+      <div class="right-tools">
+        <input type="text" id="topicSearch" class="search-field" placeholder="Filter subjects, topics, or pages...">
+        <button type="button" class="print-btn" onclick="window.print()">🖨️ Print Guide</button>
+      </div>
+    </div>
+
+    <div class="subject-roadmap" id="subjectRoadmap"></div>
+  </section>
+</main>
+
+<footer>
+  <p><strong>Al-Rowad International Schools</strong> · Quarter 2 Quiz 1: Material Covered (Weeks 16–17: Dec 6–17) · Upcoming Final Exams: Weeks 19–20 (Dec 27 – Jan 7).</p>
+  <p style="margin-top:6px;"><strong>Note:</strong> The detailed daily quiz schedule will be sent by the School Administration in Week 15 (Monday, November 30, 2026). All worksheets, PowerPoint presentations, and practice resources referenced above are available on Schoology.</p>
+</footer>
+
+<script>
+const ROADMAP = [{"id": "g1", "grade": "Grade 1", "stage": "Elementary", "tracks": ["All Students"], "subjects": [{"name": "English", "cat": "Languages", "topics": ["Spelling: Consonant Digraphs: sh, th, -ng (ELA Practice Book Vol. 1, pp. 199–203)", "High Frequency Words (HFW) (p. 207)", "Grammar: Common and Proper Nouns (pp. 208–210)", "Comprehension: Unseen passage", "Oral Fluency Assessment: Story 'Thump Thump Help Out' (Wonders Reading/Writing Companion Unit 2)"]}, {"name": "Math", "cat": "STEM", "topics": ["Unit 7: Meanings of Addition — Lesson 7-1: Represent and Solve Add To Problems", "Unit 7: Meanings of Addition — Lesson 7-6: Solve Addition Problems"]}, {"name": "Science", "cat": "STEM", "topics": ["Unit 2: Animal Parents and Their Offspring — Lesson 2: Functions of Animal Structures"]}, {"name": "Computing", "cat": "STEM", "topics": ["Unit 3: Let's Paint — 3.1 Free drawing; 3.2 Shapes and colors; 3.3 Change the shapes"]}, {"name": "الدراسات الإسلامية", "cat": "Arabic", "rtl": true, "topics": ["نطاق الصفحات: من صفحة ٦٦ إلى صفحة ٨٢", "الوحدة الرابعة: بر الوالدين / كيف نبر الوالدين؟", "الوحدة الخامسة: احترام المعلم", "الوحدة السادسة: آداب قضاء الحاجة / الذكر عند دخول دورة المياه والخروج منها"]}, {"name": "اللغة العربية", "cat": "Arabic", "rtl": true, "topics": ["وحدة: مدينتي — الحروف: ( أ / ط / ز / و / ح / ش )", "المهارات المطلوبة: إكمال الحرف الناقص، تحليل الكلمات وكتابتها، التوصيل بين الكلمة والحرف المناسب، ترتيب الكلمات لتكوين جملة مفيدة، الكتابة بخط النسخ الجميل"]}], "quizWeight": "10 Marks (out of 25 in Q2 · 50 in Semester 1)", "quizShort": "10 Marks"}, {"id": "g2", "grade": "Grade 2", "stage": "Elementary", "tracks": ["All Students"], "subjects": [{"name": "English", "cat": "Languages", "topics": ["Grammar: Kinds of Nouns (ELA Practice Vol. 1, pp. 138, 139, 140, 142)", "Spelling: Soft c and g (pp. 130–131)", "High Frequency Words (p. 133 + Spelling Booklet p. 31)", "Vocabulary: Homographs (p. 126) & Wonders Reading/Writing Companion Vocabulary Words (pp. 46–47)", "Unseen Comprehension & Oral Fluency Assessment: Study the story 'Starry Night'"]}, {"name": "Math", "cat": "STEM", "topics": ["Unit 6: Strategies to Fluently Subtract Within 100 — Lesson 6-3: Represent Subtraction with 2-Digit Numbers; Lesson 6-4: Represent 2-Digit Subtraction with Regrouping", "Lesson 6-5: Use a Number Line to Subtract; Lesson 6-6: Decompose Numbers to Subtract"]}, {"name": "Science", "cat": "STEM", "topics": ["Unit 3: Earth's Changing Landscape — Lesson 1: Slow Changes to Earth's Landscape"]}, {"name": "Computing", "cat": "STEM", "topics": ["Unit 3: I Create Documents — 3.1 Start typing; 3.2 Change the font; 3.3 Insert pictures"]}, {"name": "Islamic Studies (ISE)", "cat": "Islamic", "topics": ["Loving Allah: Unit 7, Lesson 1 (pp. 88–91)", "Loving Prophet Muhammad: Unit 8, Lesson 1 (pp. 98–101)"]}, {"name": "Quran", "cat": "Islamic", "topics": ["Surat Ashams"]}, {"name": "الدراسات الإسلامية", "cat": "Arabic", "rtl": true, "topics": ["نطاق الصفحات: من صفحة ٦٦ إلى صفحة ٨٨", "الموضوعات المقررة: آداب الأكل والشرب، المحافظة على الممتلكات الخاصة وحقوق الآخرين، المحافظة على البيئة، المحافظة على الممتلكات العامة"]}, {"name": "اللغة العربية", "cat": "Arabic", "rtl": true, "topics": ["وحدة: محاصيل من بلادي — الدروس المطلوبة: رحلة حبة قمح، من أنا، التقويم التجميعي", "المهارات: استيعاب المقروء والإجابة على الأسئلة المتعلقة بالنص، الكلمة ومعناها والكلمة وضدها، حروف العطف، المفرد والمثنى والجمع، الأفعال، ترتيب الجمل، الكتابة بخط النسخ الجميل"]}], "quizWeight": "10 Marks (out of 25 in Q2 · 50 in Semester 1)", "quizShort": "10 Marks"}, {"id": "g3", "grade": "Grade 3", "stage": "Elementary", "tracks": ["All Students"], "subjects": [{"name": "English", "cat": "Languages", "topics": ["Vocabulary: Wonders Reading/Writing Companion (pp. 18–19); Academic Vocabulary Booklet (pp. 35–40); Homographs (Wonders Practice p. 107)", "Grammar: Combining Sentences: Subject Nouns and Predicate Nouns (pp. 97, 98); Commas (p. 99)", "Spelling: Word Meaning (p. 104)", "Comprehension: Unseen Passage & Oral Fluency Assessment"]}, {"name": "Math", "cat": "STEM", "topics": ["Unit 5: Use Properties to Multiply by 3, 4, 6, 7, 8 and 9 — Lesson 5-1: Understand the Distributive Property", "Lesson 5-4: Use Properties to Multiply by 6; Lesson 5-5: Use Properties to Multiply by 8; Lesson 5-6: Use Properties to Multiply by 7 and 9"]}, {"name": "Science", "cat": "STEM", "topics": ["Unit 3: Different Environments — Lesson 1: Survival of Organisms; Lesson 2: Adaptation and Variations"]}, {"name": "Computing", "cat": "STEM", "topics": ["Unit 2: My First Article — 2.2 Working with text; 2.3 Paragraph formatting; 2.4 Checking and saving"]}, {"name": "Islamic Studies (ISE)", "cat": "Islamic", "topics": ["The first boy to accept Islam: Unit 11, Lesson 1 (pp. 158–162)", "Things that break Wudoo & Some rulings on Wudoo: Unit 11, Lesson 2 & Unit 12, Lesson 1 (pp. 163–174)"]}, {"name": "Quran", "cat": "Islamic", "topics": ["Surat Al-Mutaffifin"]}, {"name": "الدراسات الإسلامية", "cat": "Arabic", "rtl": true, "topics": ["نطاق الصفحات: من صفحة ٦٣ إلى صفحة ٨٠", "الموضوعات المقررة: شروط الصلاة (١ و ٢)، آداب دخول المسجد، صلاة الجماعة"]}, {"name": "اللغة العربية", "cat": "Arabic", "rtl": true, "topics": ["وحدة: أخلاق المسلم", "المهارات المطلوبة: استيعاب المقروء والإجابة على الأسئلة المتعلقة بالنص، الكلمة ومعناها والكلمة وضدها، المفرد والمثنى والجمع، أسلوب التعجب، النكرة والمعرفة"]}], "quizWeight": "10 Marks (out of 25 in Q2 · 50 in Semester 1)", "quizShort": "10 Marks"}, {"id": "g4", "grade": "Grade 4", "stage": "Elementary", "tracks": ["All Students"], "subjects": [{"name": "English", "cat": "Languages", "topics": ["Reading: Vocabulary & comprehension skill – The Ant and the Grasshopper (pp. 152–161)", "Spelling: Words with silent letters – PB pp. 169, 172, 173"]}, {"name": "Math", "cat": "STEM", "topics": ["L7-1 Divide Multiples of 10, 100 and 1000", "L7-3 Find Equal Shares", "L7-6 Understand Remainders"]}, {"name": "Science", "cat": "STEM", "topics": ["Unit 2 Part 2, Lesson 1: Energy from Nonrenewable Resources (Book pp. 92–104)", "Study from: Textbook, PowerPoint, worksheets, Schoology resources"]}, {"name": "Computing", "cat": "STEM", "topics": ["Unit 2: Working with Text — 2.2 Working with images and graphics; 2.3 Editing and grammar check; 2.4 Views and print"]}, {"name": "Islamic Studies (ISE)", "cat": "Islamic", "topics": ["Boycott in the Area of Aboo Taalib (Part 1, p. 136 & Part 2, p. 140)", "The Night Journey and the Ascension (Part 1, p. 146 & Part 2, p. 150)"]}, {"name": "Quran", "cat": "Islamic", "topics": ["Surat Al-Mursalat, Verses 38–50"]}, {"name": "Social Studies", "cat": "Humanities", "topics": ["Unit 2, Lesson 3: Mountains and Rivers"]}, {"name": "اللغة العربية (لغتي)", "cat": "Arabic", "rtl": true, "topics": ["الوظيفة النحوية: الفاعل (صفحة 103–111)"]}, {"name": "اللغة العربية (ASL)", "cat": "Arabic", "rtl": true, "topics": ["الوحدة الثالثة: السوق (صفحة 33–36)", "الوحدة الرابعة: أين محمد؟ (صفحة 37–40)"]}, {"name": "الدراسات الإسلامية", "cat": "Arabic", "rtl": true, "topics": ["من بداية درس: الوضوء (صفحة 103) إلى نهاية درس: فروض الوضوء (صفحة 109)"]}, {"name": "الدراسات الاجتماعية", "cat": "Arabic", "rtl": true, "topics": ["الدرس الثاني عشر: البيئة (صفحة 75–78)", "الدرس الثالث عشر: الحركة (صفحة 79–81)"]}], "quizWeight": "6 Marks (out of 30 in Q2 · 50 in Semester 1)", "quizShort": "6 Marks"}, {"id": "g5", "grade": "Grade 5", "stage": "Elementary", "tracks": ["All Students"], "subjects": [{"name": "English", "cat": "Languages", "topics": ["Grammar: Action Verbs – p. 149", "Spelling: Open Syllables (V/V) – pp. 169, 172"]}, {"name": "Math", "cat": "STEM", "topics": ["L2-4 Determine the Volume of Composite Figures", "L2-5 Solve Problems Involving Volume", "L7-1 Division Patterns with Multi-Digit Numbers"]}, {"name": "Science", "cat": "STEM", "topics": ["Part 2, Lesson 1: Earth's Major Systems (Book pp. 65–77)", "Study from: Textbook, PowerPoint, worksheets, Schoology resources"]}, {"name": "Computing", "cat": "STEM", "topics": ["Unit 2: Building a Website — 2.1 What Is a Web Page?; 2.2 Designing a Web Page"]}, {"name": "Islamic Studies (ISE)", "cat": "Islamic", "topics": ["Hejirah permission to migrate and the first Muhaajiroon (p. 133)", "The Prophet's Hijrah Part 1 (p. 142) & Part 2 (p. 148)"]}, {"name": "Quran", "cat": "Islamic", "topics": ["Surah Nuh, Verses 23–28"]}, {"name": "Social Studies", "cat": "Humanities", "topics": ["Unit 2, Lesson 4: Nature and Economy", "Unit 2, Lesson 5: Types of Economy"]}, {"name": "اللغة العربية (لغتي)", "cat": "Arabic", "rtl": true, "topics": ["الفن الأدبي: عناصر القصة – قصة خشبة المقترض (صفحة 106–107 بالكتاب)", "الفن الأدبي: عناصر القصة – قصة الطحان وولده وحمارهما (صفحة 108 إلى صفحة 111 بالكتاب)", "الفن الأدبي: عناصر القصة – درس في الصداقة (صفحة 112 إلى صفحة 114 بالكتاب)"]}, {"name": "اللغة العربية (ASL)", "cat": "Arabic", "rtl": true, "topics": ["درس: من غاب اليوم؟ (من صفحة 25–28 + من صفحة 32–35)"]}, {"name": "الدراسات الإسلامية", "cat": "Arabic", "rtl": true, "topics": ["من بداية درس: آداب المشي إلى الصلاة (صفحة 134) إلى نهاية درس: فرضية الصلاة (صفحة 146)"]}, {"name": "الدراسات الاجتماعية", "cat": "Arabic", "rtl": true, "topics": ["الدرس الحادي عشر: الموقع والحدود، صفحة 64 - 66.", "الدرس الثاني عشر: مظاهر السطح، صفحة 67 - 71."]}], "quizWeight": "6 Marks (out of 30 in Q2 · 50 in Semester 1)", "quizShort": "6 Marks"}, {"id": "g6", "grade": "Grade 6", "stage": "Elementary", "tracks": ["All Students"], "subjects": [{"name": "English", "cat": "Languages", "topics": ["Literature: Bullying in Schools (Argumentative Text) (pp. 75–80)", "Spelling: 13.94 Often Misspelled Words (p. 285)"]}, {"name": "Math", "cat": "STEM", "topics": ["Lesson 5-1 Determine the Area of Parallelograms and Rhombuses", "Lesson 5-2 Determine the Area of Triangles", "Lesson 5-3 Determine the Area of Trapezoids"]}, {"name": "Science", "cat": "STEM", "topics": ["U1 M2 L5: Control and Information Processing (pp. 127–154)", "Study from: Book, PowerPoint, worksheets"]}, {"name": "Computing", "cat": "STEM", "topics": ["Unit 2: Exploring Cloud Tools — L2: Creating Surveys (pp. 78–90); L3: Organizing Data Online (pp. 92–102)"]}, {"name": "Islamic Studies (ISE)", "cat": "Islamic", "topics": ["Unit 13, Lessons 01 & 02: Uthmaan (r.a) noble qualities; Uthmaan Khilaafa Part 01 (pp. 172–177)"]}, {"name": "Quran", "cat": "Islamic", "topics": ["Surah Haqqah, Ayah 30–40"]}, {"name": "Social Studies", "cat": "Humanities", "topics": ["Unit 4, Lesson 1: Location", "Unit 4, Lesson 2: Climate"]}, {"name": "اللغة العربية (لغتي)", "cat": "Arabic", "rtl": true, "topics": ["1- الوظيفة النحوية: الحروف الناسخة (إنّ وأخواتها) (من صفحة 91–98)", "2- الظاهرة الإملائية: الهمزة المتوسطة (من صفحة 73–77)"]}, {"name": "اللغة العربية (ASL)", "cat": "Arabic", "rtl": true, "topics": ["درس: النظافة (من صفحة 25–28 + من صفحة 32–35)"]}, {"name": "الدراسات الإسلامية", "cat": "Arabic", "rtl": true, "topics": ["من بداية درس: حكم صلاة الجمعة وصفتها (صفحة 100) إلى نهاية درس: الحكمة من مشروعية العيد (صفحة 113)"]}, {"name": "الدراسات الاجتماعية", "cat": "Arabic", "rtl": true, "topics": ["الدرس التاسع: الجوانب الحضارية للدولتين السعوديتين الأولى والثانية (صفحة 67–69)"]}], "quizWeight": "6 Marks (out of 30 in Q2 · 50 in Semester 1)", "quizShort": "6 Marks"}, {"id": "g7", "grade": "Grade 7", "stage": "Middle School", "tracks": ["All Students"], "subjects": [{"name": "English", "cat": "Languages", "topics": ["Literature: The Importance of Mindset", "Vocabulary: Unit 6"]}, {"name": "Math", "cat": "STEM", "topics": ["L4-3 Solve Percent Change Problems", "L4-4 Solve Markup and Markdown Problems", "L4-5 Solve Simple Interest Problems", "L4-6 Solve Percent Error Problems"]}, {"name": "Science", "cat": "STEM", "topics": ["Unit 2, Module 1, Lesson 3: Shaping Earth's Surface (Book pp. 49–73)", "Study from: Book, PowerPoint presentation, worksheet"]}, {"name": "Computing", "cat": "STEM", "topics": ["7.1 Computational Thinking and Programming — 7.1.7 Physical Computing"]}, {"name": "Social Studies", "cat": "Humanities", "topics": ["Lesson 1: The Solar System"]}, {"name": "Islamic Studies (ISE)", "cat": "Islamic", "topics": ["Unit 12, Lessons 01 & 02: Mus'ab ibn Umayr acceptance of Islam; Mus'ab's efforts in dawah (pp. 140–144)"]}, {"name": "Quran", "cat": "Islamic", "topics": ["Surah Mulk, Ayah 14–24"]}, {"name": "اللغة العربية (لغتي)", "cat": "Arabic", "rtl": true, "topics": ["نص الانطلاق: الأفعال تسبق الأقوال (صفحة 167–174)", "الصنف اللغوي: الجمع السالم وملحقاته (صفحة 175–177) وجمع التكسير (صفحة 203–204)"]}, {"name": "اللغة العربية (ASL)", "cat": "Arabic", "rtl": true, "topics": ["(كرتي) صفحة 37–38–40"]}, {"name": "الدراسات الإسلامية", "cat": "Arabic", "rtl": true, "topics": ["من بداية درس: الأذان والإقامة (صفحة 208) إلى نهاية درس: آداب المشي إلى الصلاة وانتظارها (صفحة 224)"]}, {"name": "الدراسات الاجتماعية", "cat": "Arabic", "rtl": true, "topics": ["الدرس الرابع عشر: حياة النبي محمد ﷺ قبل البعثة (صفحة 100–104)"]}], "quizWeight": "6 Marks (out of 30 in Q2 · 50 in Semester 1)", "quizShort": "6 Marks"}, {"id": "g8", "grade": "Grade 8", "stage": "Middle School", "tracks": ["All Students"], "subjects": [{"name": "English", "cat": "Languages", "topics": ["Literature: Commencement Address to the Santa Fe Indian School (pp. 78–88)", "Vocabulary: Unit 6 (pp. 70–79)"]}, {"name": "Math", "cat": "STEM", "topics": ["6-3 Understand and Use Square Roots", "6-4 Understand the Pythagorean Theorem", "Booklet — 10A Interior and Exterior Angles", "Booklet — 10B The Sum of the Exterior Angles of a Polygon", "Booklet — 10C The Exterior Angle of a Regular Polygon", "Booklet — 10D The Sum of the Interior Angles of a Polygon"]}, {"name": "Science", "cat": "STEM", "topics": ["Unit 2: Energy and Motion — Module 2: Mechanical Energy", "Lesson 1: Kinetic Energy", "Lesson 2: Potential Energy"]}, {"name": "Computing", "cat": "STEM", "topics": ["8.1 Computational Thinking and Programming — 8.1.4 Conditional statements in text-based programming; 8.1.5 Data in text-based programming; 8.1.6 Library programs (subroutines and functions in Python)"]}, {"name": "Social Studies", "cat": "Humanities", "topics": ["1.1 Lesson 1: The Umayyad State and Its Most Notable Caliphs (pp. 5–8)"]}, {"name": "Islamic Studies (ISE)", "cat": "Islamic", "topics": ["U10 L1: Introducing Aboo Hurayrah RAA (pp. 124–125)", "U10 L2: Aboo Hurayrah's Preservation of the Sunnah (pp. 128–130)", "U12 L1: Introducing the Mothers of the Believers (pp. 156–159)"]}, {"name": "Quran", "cat": "Islamic", "topics": ["Surat Al-Munafeqoon, Ayahs 7–11"]}, {"name": "اللغة العربية (لغتي)", "cat": "Arabic", "rtl": true, "topics": ["الجملة الخبرية الفعلية المنفية (صفحة 163–165)", "نائب الفاعل (صفحة 166–171)"]}, {"name": "اللغة العربية (ASL)", "cat": "Arabic", "rtl": true, "topics": ["(الهاتف) صفحة 37–38–40"]}, {"name": "الدراسات الإسلامية", "cat": "Arabic", "rtl": true, "topics": ["من بداية درس: فضل الصوم وشروط وجوبه (صفحة 182) إلى نهاية درس: ليلة القدر والاعتكاف (صفحة 194)"]}, {"name": "الدراسات الاجتماعية", "cat": "Arabic", "rtl": true, "topics": ["الدرس الحادي عشر: الطقس والمناخ (صفحة 109–114)"]}], "quizWeight": "6 Marks (out of 30 in Q2 · 50 in Semester 1)", "quizShort": "6 Marks"}, {"id": "g9-us", "grade": "Grade 9 · US Track", "stage": "High School", "tracks": ["US Track"], "subjects": [{"name": "English (US)", "cat": "Languages", "topics": ["Literature: Forgetfulness – Naguib Mahfouz (p. 98)", "Vocabulary: Unit 6 (pp. 70–79)"]}, {"name": "Math (SAT)", "cat": "STEM", "topics": ["Module 4 – (L5, L7)", "Module 5 – (L1, L2, L6)"]}, {"name": "Chemistry (9US)", "cat": "STEM", "topics": ["Unit 1, Module 3, Lesson 2: Defining the Atom", "Study from: Textbook, notes, PowerPoint presentations, worksheets, Schoology resources"]}, {"name": "Physics (9US)", "cat": "STEM", "topics": ["Module 2: Lesson 3 Position Time Graph; Lesson 4 How Fast", "Study from: Book, PowerPoint presentation, practice worksheet"]}, {"name": "Biology (9US)", "cat": "STEM", "topics": ["Module 3: Communities, Biomes and Ecosystems — Lesson 2: Terrestrial Biomes (PowerPoint and Schoology resources)"]}, {"name": "Computing (US)", "cat": "STEM", "topics": ["Unit 1: Computational Thinking and Programming — 1.6 Comparing algorithms; 1.7 Searching algorithms (Linear and Binary Search)"]}, {"name": "Computing Elective: Coding, AI and Digital Innovation (Digital Technology)", "cat": "STEM", "topics": ["Introduction to Python (Theory); Understanding Variables & Data Types (Theory); Build a Report Card Printer (Workshop)", "Introduction to Strings (Theory); Build an Employee Profile Generator & Validator (Workshops) — Platform: www.freecodecamp.com"]}, {"name": "E-sports & Competitive Wellness (Computer Game Development)", "cat": "STEM", "topics": ["Week 12 – Team Structures & Comms Integrity (Part 2): Structured audio coaching, formal leadership codes, systematic communication crisis resolution steps, auditing real-time match voice logs (Voice transcript analysis, tactical role enforcement, conflict management tracking, peer coaching, active mediation)", "Week 13 – Health, Wellness & Ergonomics: Physical ergonomics, sleep cycles, daily wellness habits, workstation ergonomic auditing, RSI prevention, visual fatigue management (20-20-20 rule), circadian rhythm tracking, peer physical wellness coaching"]}, {"name": "Islamic Studies (ISE)", "cat": "Islamic", "topics": ["U8 L2: The Life of the Prophet PBUH with His Companions (pp. 104–107)", "U12 L1: Safiyyah bint Huyayy: Her Accepting Islam and her Merits (pp. 148–150)", "U12 L2: Safiyyah bint Huyayy: Marriage to the Prophet PBUH (pp. 152–153)"]}, {"name": "Quran", "cat": "Islamic", "topics": ["Surat Al-Hashr, Ayahs 11–16"]}, {"name": "Social Studies (9US)", "cat": "Humanities", "topics": ["Unit 1: Geography of Saudi Arabia — Lesson 1: Location (pp. 6–7)"]}, {"name": "Humanities Elective: Financial Literacy and Entrepreneurship 1 (Financial Literacy)", "cat": "Humanities", "topics": ["Topic: Debit Card vs. Credit Cards — Lesson: Understanding Debt and Financial Risk"]}, {"name": "Humanities Elective: Marketing and Brand Strategy (Management Marketing)", "cat": "Humanities", "topics": ["Lesson 7: Creating a Buyer Persona (Customer empathy, goals, motivations, needs and pain points; using customer insights to choose product features and marketing channels; creating a buyer persona from customer scenarios)", "Lesson 8: Basic Market Research Techniques (Purpose and importance of market research; customer surveys and effective survey questions; collecting, comparing and interpreting customer feedback)"]}, {"name": "اللغة العربية (9US)", "cat": "Arabic", "rtl": true, "topics": ["اسم المفعول (صفحة 162–166) / أسلوب الشرط (صفحة 167–169)"]}, {"name": "اللغة العربية (9US - ASL)", "cat": "Arabic", "rtl": true, "topics": ["(في محل الأثاث) صفحة 37–38–40"]}, {"name": "الدراسات الإسلامية", "cat": "Arabic", "rtl": true, "topics": ["من بداية درس: التعامل مع الحيوان (صفحة 193) إلى نهاية درس: أحكام المضطر وحكم التداوي (صفحة 206)"]}, {"name": "الدراسات الاجتماعية", "cat": "Arabic", "rtl": true, "topics": ["الدرس الثامن عشر: الأنظمة السعودية (صفحة 138–140)", "الدرس التاسع عشر: النظام الأساسي للحكم (صفحة 142–143)"]}], "quizWeight": "6 Marks (out of 30 in Q2 · 50 in Semester 1)", "quizShort": "6 Marks"}, {"id": "g9-uk", "grade": "Grade 9 · UK Track", "stage": "High School", "tracks": ["UK Track"], "subjects": [{"name": "English (UK)", "cat": "Languages", "topics": ["Exercise 1 & Exercise 2"]}, {"name": "Math (Edexcel)", "cat": "STEM", "topics": ["Algebra 10 (all): Algebraic fractions", "Number 7 (all): Recurring decimals; Advanced calculator problems", "Number 8 (all): Converting units; Compound measures (speed, density, pressure)", "Number 9 – Ex (4, 4*): Foreign currency"]}, {"name": "Math (Cambridge)", "cat": "STEM", "topics": ["Chapter 2: Algebra 1 — Exercise (2-1, 2-2, 2-3, 2-4)", "Chapter 3 — Exercise (3-5 & 3-6)"]}, {"name": "Chemistry (9UK)", "cat": "STEM", "topics": ["Topic 3: Stoichiometry — 3.1 Formulae; 3.2 Relative masses of atoms and molecules", "Study from: Textbook, notes, PowerPoint presentations, worksheets, past papers, Schoology resources"]}, {"name": "Physics (9UK)", "cat": "STEM", "topics": ["Block 1: 1.7 Energy, Work and Power; Lesson 1.8 Pressure", "Study from: Textbook, notes, PowerPoint presentations, worksheets, Schoology resources"]}, {"name": "Biology (9UK)", "cat": "STEM", "topics": ["Topic 6: Plant Nutrition (TB pp. 97–124)", "Study from: Textbook, notes, PowerPoint presentations, worksheets, Schoology resources"]}, {"name": "Computer Science (9UK)", "cat": "STEM", "topics": ["3.1 Computer Architecture (pp. 75–87)", "3.2.1 Input Devices (pp. 88–101)", "3.2.2 Output Devices (pp. 101–110)"]}, {"name": "ICT (9UK)", "cat": "STEM", "topics": ["6 ICT Applications — 6.1 Communication; 6.2 Modelling applications; 6.3 Computer controlled systems; 6.4 School management systems (Book pp. 58–68)"]}, {"name": "Business (9UK)", "cat": "Humanities", "topics": ["Lesson 6: Motivating Employees"]}, {"name": "Islamic Studies (ISE)", "cat": "Islamic", "topics": ["U8 L2: The Life of the Prophet PBUH with His Companions (pp. 104–107)", "U12 L1: Safiyyah bint Huyayy: Her Accepting Islam and her Merits (pp. 148–150)", "U12 L2: Safiyyah bint Huyayy: Marriage to the Prophet PBUH (pp. 152–153)"]}, {"name": "Quran", "cat": "Islamic", "topics": ["Surat Al-Hashr, Ayahs 11–16"]}, {"name": "Social Studies (9UK)", "cat": "Humanities", "topics": ["Unit 1: Geography of Saudi Arabia — Lesson 1: Location (pp. 6–7)"]}, {"name": "Accounting (9UK)", "cat": "Humanities", "topics": ["Chapter 4: Double entry bookkeeping – Part B"]}, {"name": "اللغة العربية (9UK)", "cat": "Arabic", "rtl": true, "topics": ["المفعول معه، المفعول فيه، فن الرسالة"]}, {"name": "اللغة العربية (9UK - ASL)", "cat": "Arabic", "rtl": true, "topics": ["الوحدة الثالثة \"واجبي\" (من صفحة 25 إلى صفحة 36)"]}, {"name": "الدراسات الإسلامية", "cat": "Arabic", "rtl": true, "topics": ["من بداية درس: التعامل مع الحيوان (صفحة 193) إلى نهاية درس: أحكام المضطر وحكم التداوي (صفحة 206)"]}, {"name": "الدراسات الاجتماعية", "cat": "Arabic", "rtl": true, "topics": ["الدرس الثامن عشر: الأنظمة السعودية (صفحة 138–140)", "الدرس التاسع عشر: النظام الأساسي للحكم (صفحة 142–143)"]}], "quizWeight": "10 Marks (out of 30 in Q2 · 50 in Semester 1)", "quizShort": "10 Marks"}, {"id": "g10-us", "grade": "Grade 10 · US Track", "stage": "High School", "tracks": ["US Track"], "subjects": [{"name": "English (US)", "cat": "Languages", "topics": ["Literature: A Plea for Global Education (pp. 65–69)", "Vocabulary: Unit 6 (pp. 70–79)"]}, {"name": "Math (SAT)", "cat": "STEM", "topics": ["Topic 4: Lesson 6 – Symmetry", "Topic 5: Lesson 1 – Angles of a Triangle", "Topic 5: Lesson 2 – Congruent Triangles", "Topic 5: Lesson 3 – Proving Triangles Congruent (SSS, SAS)"]}, {"name": "Chemistry (10US)", "cat": "STEM", "topics": ["Module 3: The Structure of the Atom — L.3 How Atoms Differ? + all resources available on Schoology"]}, {"name": "Biology (10US)", "cat": "STEM", "topics": ["L24.1: Circulatory System"]}, {"name": "Computing (US)", "cat": "STEM", "topics": ["Unit 2: Working Online — Lesson 1: Working with Documents Online; Lesson 3: Presentation Broadcasting"]}, {"name": "Computing Elective: Cyber Security 1 (Introduction to Cyber security)", "cat": "STEM", "topics": ["Chapter 3: Cybersecurity Controls — 1.3.4 Access Control Models, Auditing and Monitoring; 1.3.5 Cybersecurity Access Control Tools; 1.3.6 Active Directory; 1.3.7 Attacking an IAM"]}, {"name": "E-sports & Competitive Wellness (Computer Game Development)", "cat": "STEM", "topics": ["Week 12 – Team Structures & Comms Integrity (Part 2): Structured audio coaching, formal leadership codes, systematic communication crisis resolution steps, auditing real-time match voice logs (Voice transcript analysis, tactical role enforcement, conflict management tracking, peer coaching, active mediation)", "Week 13 – Health, Wellness & Ergonomics: Physical ergonomics, sleep cycles, daily wellness habits, workstation ergonomic auditing, RSI prevention, visual fatigue management (20-20-20 rule), circadian rhythm tracking, peer physical wellness coaching"]}, {"name": "Social Studies (10US)", "cat": "Humanities", "topics": ["UNIT 3, Lesson 3: Folk Dance; UNIT 3, Lesson 4: Sport (pp. 20–21)"]}, {"name": "Islamic Studies (ISE)", "cat": "Islamic", "topics": ["U9, Lessons 1–2: The meaning + merits of Hayaa (pp. 104–112)"]}, {"name": "Quran", "cat": "Islamic", "topics": ["Surah Yaseen, Ayah 13–19"]}, {"name": "Humanities Elective: Financial Literacy and Entrepreneurship 2 (Financial Literacy)", "cat": "Humanities", "topics": ["Topic: Debit Card vs. Credit Cards — Lesson: Understanding Debt and Financial Risk"]}, {"name": "Humanities Elective: Entrepreneurship (Entrepreneurship)", "cat": "Humanities", "topics": ["Lesson 7: Crafting the Solution (Developing a solution to a validated customer problem; Minimum Viable Product (MVP) and MoSCoW prioritization; creating a value proposition)", "Lesson 8: Target Customer (Identifying and defining the target customer; customer demographics, psychographics, needs and preferences; comparing customer profiles and creating a customer persona)"]}, {"name": "Humanities Elective: Media Studies (Media Studies)", "cat": "Humanities", "topics": ["Unit 2, Lesson 3 — Topic: Story and Viral Strategy"]}, {"name": "اللغة العربية (10US)", "cat": "Arabic", "rtl": true, "topics": ["الأفعال الناسخة"]}, {"name": "اللغة العربية (10US - ASL)", "cat": "Arabic", "rtl": true, "topics": ["طلاب الـ A.S.L: صفحات الكتاب من (38–44)"]}, {"name": "الدراسات الإسلامية", "cat": "Arabic", "rtl": true, "topics": ["من بداية درس: الحديث الحادي عشر (لا تغضب) (صفحة 57) إلى نهاية درس: الحديث الثاني عشر (صفحة 62)"]}, {"name": "الدراسات الاجتماعية", "cat": "Arabic", "rtl": true, "topics": ["الدرس السابع: الكشوف الجغرافية (صفحة 55–61)"]}], "quizWeight": "6 Marks (out of 30 in Q2 · 50 in Semester 1)", "quizShort": "6 Marks"}, {"id": "g10-uk", "grade": "Grade 10 · UK Track", "stage": "High School", "tracks": ["UK Track"], "subjects": [{"name": "English (UK)", "cat": "Languages", "topics": ["Exercise 2 & Exercise 4"]}, {"name": "Math (Edexcel)", "cat": "STEM", "topics": ["Shape and Space 7 (all)", "Algebra 7 – Ex (8, 8*)", "Algebra 8 (all)"]}, {"name": "Math (Cambridge)", "cat": "STEM", "topics": ["Topic 11: Functions – Ex (11-3, 11-4)", "Topic 12: Vectors – Ex (12-1, 12-2, 12-3)"]}, {"name": "Chemistry (10UK)", "cat": "STEM", "topics": ["Chapter 11: Organic Chemistry — 11.1 Formulae, functional groups and terminology; 11.2 Naming organic compounds; 11.3 Fuels", "Study from: Textbook, notes, PowerPoint presentations, worksheets, Schoology resources"]}, {"name": "Physics (10UK)", "cat": "STEM", "topics": ["Block 4 Electromagnetism — Ch. 21: Electromagnetic Induction (Textbook pp. 395–412)", "Study from: Textbook, notes, PowerPoint presentations, worksheets, Schoology resources"]}, {"name": "Biology (10UK)", "cat": "STEM", "topics": ["Topic 16: Reproduction"]}, {"name": "Computer Science (10UK)", "cat": "STEM", "topics": ["8 Programming — 8.1 Programming Concepts: 8.1.1 Variables & Constants; 8.1.2 Basic datatypes; 8.1.3 Input & output; 8.1.4 Basic Concepts; 8.1.5 Nested statements; 8.1.6 Procedures & Functions; 8.1.7 Library routines (Book pp. 299–328)"]}, {"name": "ICT (10UK)", "cat": "STEM", "topics": ["18 Databases (Book pp. 182–250)"]}, {"name": "Business (10UK)", "cat": "Humanities", "topics": ["Chapter 29: Business and the International Economy (pp. 346–356)"]}, {"name": "Social Studies (10UK)", "cat": "Humanities", "topics": ["UNIT 3, Lesson 3: Folk Dance; UNIT 3, Lesson 4: Sport (pp. 20–21)"]}, {"name": "Islamic Studies (ISE)", "cat": "Islamic", "topics": ["U9, Lessons 1–2: The meaning + merits of Hayaa (pp. 104–112)"]}, {"name": "Quran", "cat": "Islamic", "topics": ["Surah Yaseen, Ayah 13–19"]}, {"name": "Accounting (10UK)", "cat": "Humanities", "topics": ["Unit 18: Accounts of Clubs and Societies"]}, {"name": "اللغة العربية (10UK)", "cat": "Arabic", "rtl": true, "topics": ["اسم التفضيل، أسلوبا الإغراء والتحذير، فن الخطبة"]}, {"name": "اللغة العربية (10UK - ASL)", "cat": "Arabic", "rtl": true, "topics": ["الوحدة الثالثة \"الجسم\" – النفي، صيغ الفعل (من صفحة 38 إلى صفحة 54)"]}, {"name": "الدراسات الإسلامية", "cat": "Arabic", "rtl": true, "topics": ["من بداية درس: الحديث الحادي عشر (لا تغضب) (صفحة 57) إلى نهاية درس: الحديث الثاني عشر (صفحة 62)"]}, {"name": "الدراسات الاجتماعية", "cat": "Arabic", "rtl": true, "topics": ["الدرس السابع: الكشوف الجغرافية (صفحة 55–61)"]}], "quizWeight": "10 Marks (out of 30 in Q2 · 50 in Semester 1)", "quizShort": "10 Marks"}, {"id": "g11-us", "grade": "Grade 11 · US Track", "stage": "High School", "tracks": ["US Track"], "subjects": [{"name": "English (US)", "cat": "Languages", "topics": ["Grammar: 4.30 Sentence Fragments; 4.31 Run-on Sentences", "Vocabulary: Unit 6 (pp. 70–79)"]}, {"name": "Math (SAT)", "cat": "STEM", "topics": ["Topic 3: L7, L8", "Topic 4: L1, L2"]}, {"name": "Chemistry (11US)", "cat": "STEM", "topics": ["10.3 Limiting Reactants (pp. 326–331); 10.4 Percent Yield (pp. 332–335)"]}, {"name": "Physics (11US)", "cat": "STEM", "topics": ["11.1 Temperature, Heat and Thermal Energy; 11.2 Changes in State, and Thermodynamics"]}, {"name": "Biology (11US)", "cat": "STEM", "topics": ["L18.2: Protists Diversity (Book pp. 477–486); L18.3: Introduction to Fungi (Book pp. 487–490)"]}, {"name": "AP Biology (11AP)", "cat": "STEM", "topics": ["Chapter 3: Cellular Energetics"]}, {"name": "Computing (US)", "cat": "STEM", "topics": ["Unit 4, Lesson 2: From prototyping to developing"]}, {"name": "Computing Elective: Cyber Security 2 (Cyber security CY 001)", "cat": "STEM", "topics": ["Chapter 3: Cybersecurity Controls — 1.3.4 Access Control Models, Auditing and Monitoring; 1.3.5 Cybersecurity Access Control Tools; 1.3.6 Active Directory; 1.3.7 Attacking an IAM"]}, {"name": "E-sports & Competitive Wellness (Computer Game Development)", "cat": "STEM", "topics": ["Week 12 – Team Structures & Comms Integrity (Part 2): Structured audio coaching, formal leadership codes, systematic communication crisis resolution steps, auditing real-time match voice logs (Voice transcript analysis, tactical role enforcement, conflict management tracking, peer coaching, active mediation)", "Week 13 – Health, Wellness & Ergonomics: Physical ergonomics, sleep cycles, daily wellness habits, workstation ergonomic auditing, RSI prevention, visual fatigue management (20-20-20 rule), circadian rhythm tracking, peer physical wellness coaching"]}, {"name": "Graphic Design (Graphic Design)", "cat": "STEM", "topics": ["Week 11: Figma Workspace, Layer Stacking Hierarchy, Vector vs. Raster (SVG vs. JPEG/PNG), Logo Clear Space Padding, 500% Zoom Audit", "Week 12: Non-Destructive Subject Masking, Geometric Frame Masking, Contrast Overlays, Dual-Mood Color Harmonization", "Week 13: A4 Canvas Specs (2480×3508 px / 3508×2480 px), Rule of Thirds (Shift+G), 3-Tier Visual Hierarchy, 3-Phase Studio Workflow, 2-Minute Squint Test & 5-Foot Contrast Check"]}, {"name": "Social Studies (11US)", "cat": "Humanities", "topics": ["Ch. 1: Saudi Arabia Situation before the Saudi State (pp. 23–26)"]}, {"name": "Islamic Studies (ISE)", "cat": "Islamic", "topics": ["U7 L1: The consequences of Uhud (pp. 72–74) + U9 L2: The battle of Al Khandaq: Outcome (pp. 104–106)"]}, {"name": "Quran", "cat": "Islamic", "topics": ["Surah Maryam, Ayah 16–21"]}, {"name": "AP Psychology (11AP)", "cat": "Humanities", "topics": ["Chapter 4: Learning"]}, {"name": "Humanities Elective: Financial Literacy and Entrepreneurship 3 (Financial Literacy)", "cat": "Humanities", "topics": ["Topic: Debit Card vs. Credit Cards — Lesson: Understanding Debt and Financial Risk"]}, {"name": "Humanities Elective: International Business (International Business)", "cat": "Humanities", "topics": ["Topic: International Marketing Entry Strategies"]}, {"name": "اللغة العربية (11US)", "cat": "Arabic", "rtl": true, "topics": ["الأساليب البلاغية / الفعل اللازم والمتعدي – المتعدي لمفعولين أصلهما المبتدأ والخبر"]}, {"name": "اللغة العربية (11US - ASL)", "cat": "Arabic", "rtl": true, "topics": ["الوحدة الثالثة \"رسالة إلى أخي\" – والتقاعد (من صفحة 38 إلى صفحة 54)"]}, {"name": "الدراسات الإسلامية", "cat": "Arabic", "rtl": true, "topics": ["من بداية درس: الخلع (صفحة 61) إلى نهاية درس: النفقات (صفحة 68)"]}, {"name": "الدراسات الاجتماعية", "cat": "Arabic", "rtl": true, "topics": ["الدرس السابع: الموقع (صفحة 42–44)", "الدرس الثامن: الآثار والمصادر الكلاسيكية (صفحة 45–47)"]}], "quizWeight": "6 Marks (out of 30 in Q2 · 50 in Semester 1)", "quizShort": "6 Marks"}, {"id": "g11-uk", "grade": "Grade 11 · UK Track", "stage": "High School", "tracks": ["UK Track"], "subjects": [{"name": "English (11UK)", "cat": "Languages", "topics": ["Unseen Comprehension Passages"]}, {"name": "Math (AS · P1)", "cat": "STEM", "topics": ["P1: Chapters 7, 8, 9"]}, {"name": "Chemistry (11UK)", "cat": "STEM", "topics": ["Unit 1, Topic 5: Alkenes", "Study from: Textbook, notes, PowerPoint presentations, worksheets, Schoology resources"]}, {"name": "Physics (11UK)", "cat": "STEM", "topics": ["1C. Momentum; 2A. Fluid; 2B. Solid material properties"]}, {"name": "Biology (11UK)", "cat": "STEM", "topics": ["Topic 2B: Enzymes, DNA, Protein Synthesis"]}, {"name": "Computer Science (11UK)", "cat": "STEM", "topics": ["6 Security, Privacy and Data Integrity (6.1 Data security; 6.2 Data integrity)", "7 Ethics and Ownership (7.1 Legal, moral, ethical & cultural implications; 7.2 Copyright issues; 7.3 Artificial intelligence) (Book pp. 159–195)"]}, {"name": "Business (11UK)", "cat": "Humanities", "topics": ["Unit 3: Chapter 17 The nature of marketing; Chapter 18 Market research (pp. 272–307)"]}, {"name": "Economics (11UK)", "cat": "Humanities", "topics": ["Chapter 14: Addressing income and wealth inequality (pp. 115–120)", "Chapter 15: National Income Statistics (pp. 124–130)", "Chapter 16: Introduction to circular flow of Income (pp. 132–138)"]}, {"name": "Social Studies (11UK Arts/Sci)", "cat": "Humanities", "topics": ["Ch. 1: Saudi Arabia Situation before the Saudi State (pp. 23–26)"]}, {"name": "Islamic Studies (ISE)", "cat": "Islamic", "topics": ["U7 L1: The consequences of Uhud (pp. 72–74) + U9 L2: The battle of Al Khandaq: Outcome (pp. 104–106)"]}, {"name": "Quran", "cat": "Islamic", "topics": ["Surah Maryam, Ayah 16–21"]}, {"name": "Accounting (11UK)", "cat": "Humanities", "topics": ["Chapters 16 & 17: Incomplete records; further considerations"]}, {"name": "Psychology (11UK Arts)", "cat": "Humanities", "topics": ["Chapter 2: The Cognitive Approach — (2.2) Baron-Cohen et al. (eye test); (2.3) Pozzulo et al. (Line up) (pp. 60–84)"]}, {"name": "اللغة العربية (11UK)", "cat": "Arabic", "rtl": true, "topics": ["الأساليب البلاغية / الفعل اللازم والمتعدي – المتعدي لمفعولين أصلهما المبتدأ والخبر"]}, {"name": "اللغة العربية (11UK - ASL)", "cat": "Arabic", "rtl": true, "topics": ["الوحدة الثالثة \"رسالة إلى أخي\" – والتقاعد (من صفحة 38 إلى صفحة 54)"]}, {"name": "الدراسات الإسلامية", "cat": "Arabic", "rtl": true, "topics": ["من بداية درس: الخلع (صفحة 61) إلى نهاية درس: النفقات (صفحة 68)"]}, {"name": "الدراسات الاجتماعية", "cat": "Arabic", "rtl": true, "topics": ["الدرس السابع: الموقع (صفحة 42–44)", "الدرس الثامن: الآثار والمصادر الكلاسيكية (صفحة 45–47)"]}], "quizWeight": "10 Marks (out of 30 in Q2 · 50 in Semester 1)", "quizShort": "10 Marks"}, {"id": "g12-us", "grade": "Grade 12 · US Track", "stage": "High School", "tracks": ["US Track"], "subjects": [{"name": "English (US)", "cat": "Languages", "topics": ["Grammar: 4.26 Adjective Clauses (p. 103); 4.27 Adverb Clauses (p. 105); 4.28 Noun Clauses (p. 107)", "Vocabulary: Unit 7 (p. 88)"]}, {"name": "Math (SAT · Precalculus)", "cat": "STEM", "topics": ["Precalculus — Topic 9: L4, L5", "Precalculus — Topic 1: L2", "Precalculus — Topic 10: L1"]}, {"name": "AP Calculus / Math (AP)", "cat": "STEM", "topics": ["5.1, 5.2, 5.3, 5.4, 5.5"]}, {"name": "Chemistry (12US)", "cat": "STEM", "topics": ["17.1 Introductions to acids and bases (p. 558); 17.2 Strengths of acids and bases (p. 568)"]}, {"name": "Physics (12US)", "cat": "STEM", "topics": ["20.1 Understanding Magnetism (Textbook pp. 547–555)", "20.2 Applying Magnetic Forces (Textbook pp. 556–564)", "Study from: Textbook, PPT, Notes, Worksheets uploaded in Schoology"]}, {"name": "Biology (12US)", "cat": "STEM", "topics": ["L8.2: Photosynthesis (Book pp. 202–208); L8.3: Cellular respiration (Book pp. 209–214)"]}, {"name": "AP Biology (12AP)", "cat": "STEM", "topics": ["Chapter 6: Gene Expression and Regulation"]}, {"name": "Computing Elective: Cyber Security 3 (Cyber security CY 002)", "cat": "STEM", "topics": ["Chapter 3: Cybersecurity Controls — 1.3.4 Access Control Models, Auditing and Monitoring; 1.3.5 Cybersecurity Access Control Tools; 1.3.6 Active Directory; 1.3.7 Attacking an IAM"]}, {"name": "Social Studies (12US)", "cat": "Humanities", "topics": ["UNIT 2: The Saudi state prior to waging Holy Islamic war (Jihad) against the Da'wa enemies; Challenges tackled by the First Saudi state (pp. 15–17)"]}, {"name": "Islamic Studies (ISE)", "cat": "Islamic", "topics": ["U10 L2: Rights of Individuals (pp. 123–126) / U11 L1: Marriage 1 (pp. 137–139)"]}, {"name": "Quran", "cat": "Islamic", "topics": ["Surah Al-Kahf, Ayah 7–13"]}, {"name": "Humanities Elective: Business (Financial Literacy)", "cat": "Humanities", "topics": ["Topic: Debit Card vs. Credit Cards — Lesson: Understanding Debt and Financial Risk"]}, {"name": "Humanities Elective: E-Commerce (Digital Marketing)", "cat": "Humanities", "topics": ["Topic: Website Setup and Product Listing — Lesson: Writing product titles and description"]}, {"name": "اللغة العربية (12US)", "cat": "Arabic", "rtl": true, "topics": ["معلقة زهير بن أبي سلمى"]}, {"name": "اللغة العربية (12US - ASL)", "cat": "Arabic", "rtl": true, "topics": ["الوحدة الثالثة \"الكعبة، تاريخها وصفتها\" – والحرم المكي (من صفحة 38 إلى 54)"]}, {"name": "الدراسات الإسلامية", "cat": "Arabic", "rtl": true, "topics": ["من بداية درس: تفسير سورة الأعراف (آية 44–46) (صفحة 44) إلى نهاية درس: تفسير سورة الأعراف (آية 175–179) (صفحة 50)"]}, {"name": "الدراسات الاجتماعية", "cat": "Arabic", "rtl": true, "topics": ["الدولة السعودية الثانية: التأسيس (صفحة 40–42)", "الدولة السعودية الثانية: الاستقرار (صفحة 43–45)"]}], "quizWeight": "6 Marks (out of 30 in Q2 · 50 in Semester 1)", "quizShort": "6 Marks"}, {"id": "g12-uk", "grade": "Grade 12 · UK Track", "stage": "High School", "tracks": ["UK Track"], "subjects": [{"name": "English (12UK)", "cat": "Languages", "topics": ["Unseen Comprehension Passages"]}, {"name": "Math (A2 · P4)", "cat": "STEM", "topics": ["P4 — Ch 1: Proof", "P4 — Ch 2: Partial Fractions", "P4 — Ch 3: Coordinate Geometry in the (x, y) Plane"]}, {"name": "Chemistry (12UK)", "cat": "STEM", "topics": ["U.4 – T.14: Acid-Base Equilibria"]}, {"name": "Physics (12UK)", "cat": "STEM", "topics": ["7A. Probing Matter; 7B. Particle Accelerator and Detectors; 7C. The Particle Zoo"]}, {"name": "Biology (12UK)", "cat": "STEM", "topics": ["Topic 6B: Immunity"]}, {"name": "Computer Science (12UK)", "cat": "STEM", "topics": ["17 Security — 17.1 Encryption; 17.2 Quantum cryptography; 17.3 Protocols; 17.4 Digital signatures and digital certificates (Book pp. 410–422)"]}, {"name": "Business (12UK)", "cat": "Humanities", "topics": ["Chapter 35: Investment appraisal; Chapter 36: Finance and Accounting Strategy (pp. 584–607)"]}, {"name": "Economics (12UK)", "cat": "Humanities", "topics": ["Chapter 37: Different objectives and policies of firms (pp. 315–321)", "Chapter 38: Government policies to achieve efficient resource allocation and correct market failure (pp. 325–331)", "Chapter 39: Equity and redistribution of income and wealth (pp. 333–337)"]}, {"name": "Social Studies (12UK Arts/Sci)", "cat": "Humanities", "topics": ["UNIT 2: The Saudi state prior to waging Holy Islamic war (Jihad) against the Da'wa enemies; Challenges tackled by the First Saudi state (pp. 15–17)"]}, {"name": "Islamic Studies (ISE)", "cat": "Islamic", "topics": ["U10 L2: Rights of Individuals (pp. 123–126) / U11 L1: Marriage 1 (pp. 137–139)"]}, {"name": "Quran", "cat": "Islamic", "topics": ["Surah Al-Kahf, Ayah 7–13"]}, {"name": "Accounting (12UK)", "cat": "Humanities", "topics": ["Chapter 36: Activity based costing", "Chapter 37: Budgeting and budgetary control"]}, {"name": "Psychology (12UK Arts)", "cat": "Humanities", "topics": ["Chapter 8: Health Psychology — (8.1) The patient-practitioner relationship; (8.2) Adherence to medical advice (pp. 517–541)"]}, {"name": "اللغة العربية (12UK)", "cat": "Arabic", "rtl": true, "topics": ["معلقة زهير بن أبي سلمى"]}, {"name": "اللغة العربية (12UK - ASL)", "cat": "Arabic", "rtl": true, "topics": ["الوحدة الثالثة \"الكعبة، تاريخها وصفتها\" – والحرم المكي (من صفحة 38 إلى 54)"]}, {"name": "الدراسات الإسلامية", "cat": "Arabic", "rtl": true, "topics": ["من بداية درس: تفسير سورة الأعراف (آية 44–46) (صفحة 44) إلى نهاية درس: تفسير سورة الأعراف (آية 175–179) (صفحة 50)"]}, {"name": "الدراسات الاجتماعية", "cat": "Arabic", "rtl": true, "topics": ["الدولة السعودية الثانية: التأسيس (صفحة 40–42)", "الدولة السعودية الثانية: الاستقرار (صفحة 43–45)"]}], "quizWeight": "10 Marks (out of 30 in Q2 · 50 in Semester 1)", "quizShort": "10 Marks"}];
+
+const MILESTONES = [
+  {
+    step: "Phase 1 · Current Week",
+    title: "Material Covered Shared",
+    date: "Week 14 · Nov 22–26",
+    tip: "Parent Tip: All Quarter 2 Quiz 1 materials are now shared. Download worksheets and presentations from Schoology today to organize your child's study plan."
+  },
+  {
+    step: "Phase 2 · Revision & Schedule",
+    title: "Pre-Quiz Review & Schedule",
+    date: "Week 15 · Nov 29 – Dec 3",
+    tip: "Parent Tip: The detailed daily quiz schedule will be distributed by School Administration during Week 15 (Monday, November 30, 2026). Use this week to complete the checklist below alongside classroom revision."
+  },
+  {
+    step: "Phase 3 · Quarter 2 Quiz 1",
+    title: "Quarter 2 · Quiz 1 Window",
+    date: "Weeks 16–17 · Sun, Dec 6 – Thu, Dec 17",
+    tip: "Assessment Calendar Reminder: Quarter 2 Quiz 1 runs across Weeks 16 and 17 (Sunday, Dec 6 – Thursday, Dec 17). Detailed daily quiz dates will be distributed by School Administration on Monday, November 30, 2026 (Week 15)."
+  },
+  {
+    step: "Phase 4 · Upcoming Finals",
+    title: "Semester 1 Final Exams",
+    date: "Weeks 19–20 · Dec 27 – Jan 7",
+    tip: "Assessment Calendar Reminder: Upcoming Semester 1 Final Exams take place during Weeks 19 and 20, starting Sunday, December 27, 2026, and finishing Thursday, January 7, 2027."
+  }
+];
+
+let selectedGradeId = "g1";
+let selectedCat = "all";
+let searchTerm = "";
+let activeStepIdx = 0;
+
+// Load saved checklist progress from localStorage
+let checkedTopics = {};
+try {
+  checkedTopics = JSON.parse(localStorage.getItem("alrowad_q2_checks") || "{}");
+} catch (e) {
+  checkedTopics = {};
+}
+
+function saveChecks() {
+  try {
+    localStorage.setItem("alrowad_q2_checks", JSON.stringify(checkedTopics));
+  } catch (e) {}
+}
+
+function renderStepper() {
+  const track = document.getElementById("stepperTrack");
+  const drawer = document.getElementById("stepDrawer");
+
+  track.innerHTML = MILESTONES.map((m, idx) => `
+    <button type="button" class="step-node ${idx === activeStepIdx ? 'active' : ''}" data-idx="${idx}">
+      <div class="step-num">${m.step}</div>
+      <div class="step-title">${m.title}</div>
+      <div class="step-date">${m.date}</div>
+    </button>
+  `).join("");
+
+  const curGrade = ROADMAP.find(item => item.id === selectedGradeId) || ROADMAP[0];
+  const weightNote = activeStepIdx === 2
+    ? ` · Allocated Mark for ${curGrade.grade}: <strong>${curGrade.quizWeight}</strong>`
+    : "";
+  drawer.innerHTML = `<span>💡 ${MILESTONES[activeStepIdx].tip}${weightNote}</span>`;
+
+  track.querySelectorAll(".step-node").forEach(btn => {
+    btn.addEventListener("click", () => {
+      activeStepIdx = Number(btn.dataset.idx);
+      renderStepper();
+    });
+  });
+}
+
+function renderSidebar() {
+  const groups = {
+    "nav-elem": ROADMAP.filter(g => g.stage === "Elementary"),
+    "nav-mid": ROADMAP.filter(g => g.stage === "Middle School"),
+    "nav-us": ROADMAP.filter(g => g.tracks.includes("US Track")),
+    "nav-uk": ROADMAP.filter(g => g.tracks.includes("UK Track"))
+  };
+
+  Object.entries(groups).forEach(([elId, list]) => {
+    const el = document.getElementById(elId);
+    el.innerHTML = list.map(g => {
+      const shortName = g.id.toUpperCase().replace("-US", " · US").replace("-UK", " · UK");
+      return `
+        <button type="button" class="g-btn ${g.id === selectedGradeId ? 'active' : ''}" data-id="${g.id}">
+          <span class="g-main">${shortName}</span>
+        </button>
+      `;
+    }).join("");
+
+    el.querySelectorAll(".g-btn").forEach(btn => {
+      btn.addEventListener("click", () => {
+        selectedGradeId = btn.dataset.id;
+        selectedCat = "all";
+        searchTerm = "";
+        document.getElementById("topicSearch").value = "";
+        renderSidebar();
+        renderMainStage();
+      });
+    });
+  });
+}
+
+function updateProgress(gradeObj) {
+  let total = 0;
+  let done = 0;
+  gradeObj.subjects.forEach((s, sIdx) => {
+    s.topics.forEach((t, tIdx) => {
+      total++;
+      const key = `${gradeObj.id}_${sIdx}_${tIdx}`;
+      if (checkedTopics[key]) done++;
+    });
+  });
+  const pct = total === 0 ? 0 : Math.round((done / total) * 100);
+  document.getElementById("progressText").textContent = `${done} / ${total} Reviewed (${pct}%)`;
+  document.getElementById("progressFill").style.width = `${pct}%`;
+}
+
+function renderMainStage() {
+  const g = ROADMAP.find(item => item.id === selectedGradeId) || ROADMAP[0];
+
+  // Update Header Tag & Title
+  const tagEl = document.getElementById("activeTrackTag");
+  tagEl.textContent = `${g.stage} · ${g.tracks[0]}`;
+  tagEl.className = "track-tag " + (
+    g.tracks.includes("US Track") ? "tag-us" :
+    g.tracks.includes("UK Track") ? "tag-uk" :
+    g.stage === "Elementary" ? "tag-elem" : "tag-mid"
+  );
+
+  document.getElementById("activeGradeTitle").textContent = g.grade;
+  document.getElementById("activeWeightBadge").textContent = `⚖️ Q2 Quiz Weight: ${g.quizWeight}`;
+  renderStepper();
+  document.getElementById("activeSubInfo").textContent =
+    `Quarter 2 Quiz 1 Material Covered · Select a subject tab or tick topics below as you review`;
+
+  updateProgress(g);
+
+  // Build available category tabs for this grade
+  const availableCats = ["all", ...new Set(g.subjects.map(s => s.cat))];
+  const catNames = {
+    all: "All Subjects",
+    STEM: "Math, Science & Computing",
+    Languages: "English",
+    Humanities: "Humanities, Business & Econ",
+    Islamic: "Islamic & Quran",
+    Arabic: "المواد العربية"
+  };
+
+  const catTabs = document.getElementById("catTabs");
+  catTabs.innerHTML = availableCats.map(c => `
+    <button type="button" class="cat-tab ${c === selectedCat ? 'active' : ''}" data-cat="${c}">
+      ${catNames[c] || c}
+    </button>
+  `).join("");
+
+  catTabs.querySelectorAll(".cat-tab").forEach(btn => {
+    btn.addEventListener("click", () => {
+      selectedCat = btn.dataset.cat;
+      renderMainStage();
+    });
+  });
+
+  // Filter subjects
+  const q = searchTerm.trim().toLowerCase();
+  const listEl = document.getElementById("subjectRoadmap");
+
+  const filtered = g.subjects
+    .map((s, origIdx) => ({ ...s, origIdx }))
+    .filter(s => {
+      const catOk = selectedCat === "all" || s.cat === selectedCat;
+      const qOk = !q || s.name.toLowerCase().includes(q) || s.topics.some(t => t.toLowerCase().includes(q));
+      return catOk && qOk;
+    });
+
+  if (filtered.length === 0) {
+    listEl.innerHTML = `<div style="padding:24px;color:var(--slate);background:var(--bg);border-radius:12px;">No subjects match your filter. Try clearing the search box.</div>`;
+    return;
+  }
+
+  listEl.innerHTML = filtered.map(s => {
+    const allTopicsChecked = s.topics.every((_, tIdx) => checkedTopics[`${g.id}_${s.origIdx}_${tIdx}`]);
+
+    const topicsHtml = s.topics.map((t, tIdx) => {
+      const key = `${g.id}_${s.origIdx}_${tIdx}`;
+      const isChecked = !!checkedTopics[key];
+      return `
+        <label class="topic-item ${isChecked ? 'checked' : ''}">
+          <input type="checkbox" data-key="${key}" ${isChecked ? 'checked' : ''}>
+          <span>${t}</span>
+        </label>
+      `;
+    }).join("");
+
+    return `
+      <article class="subj-stop cat-${s.cat} ${s.rtl ? 'ar' : ''} ${allTopicsChecked ? 'completed' : ''}">
+        <div class="stop-marker"></div>
+        <div class="stop-header">
+          <div class="stop-title-wrap">
+            <span class="stop-title">${s.name}</span>
+            <span class="stop-cat">${s.cat}</span>
+          </div>
+        </div>
+        <div class="topic-list">${topicsHtml}</div>
+      </article>
+    `;
+  }).join("");
+
+  listEl.querySelectorAll('input[type="checkbox"]').forEach(cb => {
+    cb.addEventListener("change", () => {
+      const key = cb.dataset.key;
+      if (cb.checked) checkedTopics[key] = true;
+      else delete checkedTopics[key];
+      saveChecks();
+      renderMainStage();
+    });
+  });
+}
+
+document.getElementById("topicSearch").addEventListener("input", e => {
+  searchTerm = e.target.value;
+  renderMainStage();
+});
+
+document.getElementById("resetProgressBtn").addEventListener("click", () => {
+  const g = ROADMAP.find(item => item.id === selectedGradeId);
+  if (!g) return;
+  g.subjects.forEach((s, sIdx) => {
+    s.topics.forEach((_, tIdx) => {
+      delete checkedTopics[`${g.id}_${sIdx}_${tIdx}`];
+    });
+  });
+  saveChecks();
+  renderMainStage();
+});
+
+renderStepper();
+renderSidebar();
+renderMainStage();
+</script>
+
+</body>
+</html>
